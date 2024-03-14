@@ -11,7 +11,7 @@ dask-worker-space
 dcgm/
 src/*.txt
 src/nohup.out
-
+*.html
 
 # C extensions
 *.so

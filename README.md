@@ -13,7 +13,7 @@ This project is to create several regression models trained with different chemi
     ├── README.md          <- The top-level README for developers using this project.
     │
     ├── data               <- A folder for the expected csv files for input and destinations for output 
-    │    ├── search_dataframes_result <- CSV files from the HPO for the models
+    │    └── search_dataframes_result <- CSV files from the HPO for the models
     │
     ├── models             <- selected models after HPO 
     │
