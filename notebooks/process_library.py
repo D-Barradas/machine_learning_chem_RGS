@@ -17,9 +17,15 @@ import pickle
 
 
 # %%
-def get_data_separated(dataframe, test_size=0.2, random_state=None):
-    target_feature = ['ΔVC -p'] #+ ΔVC-m,ΔVC -p
-    features_to_drop = ['substituent','molecular_formula','Name','canonical_smiles','ΔVC-m','cid']
+def get_data_separated(dataframe, test_size=0.2, random_state=None,choice=0):
+    if choice == 0 :
+        target_feature = ['ΔVC -p'] #+ ΔVC-m,ΔVC -p
+    elif choice ==1 : 
+        target_feature = ['ΔVC-m']
+    else:
+        target_feature = ['ΔVC-m','ΔVC -p']
+
+    features_to_drop = ['substituent','molecular_formula','Name','canonical_smiles','cid']
 
     # Assuming 'target_feature' is the dependent variable (y)
     y = dataframe[target_feature]
