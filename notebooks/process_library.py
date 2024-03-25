@@ -80,6 +80,7 @@ def save_metrics_results(model,X_test,y_test,tag):
     mean_df = pd.DataFrame(data=results,index=[f"{tag}"])
     return mean_df
 
+# %%
 def load_regression_models():
     models = {
         'Linear Regression': LinearRegression(),
