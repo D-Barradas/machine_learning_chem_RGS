@@ -7,7 +7,8 @@ today = date.today()
 print ( "Today's date:", today)
 
 # %%
-path = '/Users/barradd/Documents/GitHub/machine_learning_chem_RGS/data/inital-data-19-nov-23.xlsx'
+# path = '/Users/barradd/Documents/GitHub/machine_learning_chem_RGS/data/inital-data-19-nov-23.xlsx'
+path = '/Users/barradd/Documents/GitHub/machine_learning_chem_RGS/data/inital-data-07-dec-23.xlsx'
 
 # %%
 my_df = pd.read_excel(path)
