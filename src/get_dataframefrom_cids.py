@@ -13,7 +13,7 @@ import time
 
 # %%
 # all_cids = [ x for x in open("../data/compunds_cids.txt", "r")]
-all_cids = [ x for x in open("../data/missing_cids.txt", "r")]
+all_cids = [ x for x in open("../data/missing_cid.txt", "r")]
 
 # %%
 # def get_the_rdkit_features(df_to_edit):

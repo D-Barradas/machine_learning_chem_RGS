@@ -1,0 +1,2 @@
+substituent,molecular_formula,Name,ΔVC-m,ΔVC -p,σm,σp,Fb,Rc,cid,molecular_weight,exact_mass,monoisotopic_mass,charge,heavy_atom_count,h_bond_donor_count,h_bond_acceptor_count,xlogp,tpsa,canonical_smiles,complexity,covalent_unit_count,all_atoms_count,all_atoms_count_unique,Num_of_Rings,heavy_atoms,aromatic_bond,single_bond,double_bond,triple_bond,C,H,N,O,S,F,Cl,P,Ge,Se,Si,Br,B,As
+Hydroxide,OH-,hydroxide ion,0,0,0,0,0,0,961,17.007,17.002739651,17.002739651,-1,1,1,1,-0.6,1,0,1,2,2,0,1,0,0,0,0,0,0,1,0,1,,,,,,,,,,

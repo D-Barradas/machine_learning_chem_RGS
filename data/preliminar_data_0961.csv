@@ -1,0 +1,2 @@
+cid,molecular_formula,molecular_weight,exact_mass,monoisotopic_mass,charge,heavy_atom_count,h_bond_donor_count,h_bond_acceptor_count,xlogp,tpsa,canonical_smiles,complexity,covalent_unit_count,all_atoms_count,all_atoms_count_unique,Num_of_Rings,heavy_atoms,aromatic_bond,single_bond,double_bond,triple_bond,H,O
+961,HO-,17.007,17.002739651,17.002739651,-1,1,1,1,-0.6,1,[OH-],0,1,2,2,0,1,0,0,0,0,1.0,1.0

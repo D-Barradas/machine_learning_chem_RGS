@@ -1,0 +1,2 @@
+substituent,molecular_formula,Name,ΔVC-m,ΔVC -p,σm,σp,Fb,Rc,cid,molecular_weight,exact_mass,monoisotopic_mass,charge,heavy_atom_count,h_bond_donor_count,h_bond_acceptor_count,xlogp,tpsa,canonical_smiles,complexity,covalent_unit_count,all_atoms_count,all_atoms_count_unique,Num_of_Rings,heavy_atoms,aromatic_bond,single_bond,double_bond,triple_bond,C,H,N,O,S,F,Cl,P,Ge,Se,Si,Br,B,As
+OMe,C7H8O,Anisole,-0.2,-5.0,0.12,-0.27,0.29,-0.56,7519,108.14,108.057514874,108.057514874,0,8,0,1,2.1,9.2,COC1=CC=CC=C1,55.4,1,16,3,1,8,6,2,0,0,7.0,8.0,,1.0,,,,,,,,,,
