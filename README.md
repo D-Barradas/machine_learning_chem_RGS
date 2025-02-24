@@ -29,11 +29,29 @@ This project is to create several regression models trained with different chemi
 
 --------
 
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- [PubChem](https://pubchem.ncbi.nlm.nih.gov/) for the chemical data.
+- [cookiecutter data science project template](https://drivendata.github.io/cookiecutter-data-science/)
+
 ## Authors
 
 - [Dr. Didier Barradas Bautista](https://www.github.com/D-barradas)
-
-
+- [Dr. Remya Nair]())
 
 ## 🔗 Links
 
