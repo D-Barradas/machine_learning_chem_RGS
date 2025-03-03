@@ -70,7 +70,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Authors
 
 - [Dr. Didier Barradas Bautista](https://www.github.com/D-barradas)
-- [Dr. Remya Nair]())
+- [Dr. Remya Nair](https://github.com/remya-gs)
 
 ## 🔗 Links
 
