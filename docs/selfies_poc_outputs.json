@@ -1,0 +1,43 @@
+{
+  "script": "src/selfies_tokenizer_poc.py",
+  "description": "CLI PoC that builds a simple SELFIES tokenizer vocab, trains a tiny PyTorch regressor, and saves a checkpoint.",
+  "inputs": [
+    {
+      "path_pattern": "data/hf_dataset_small_train.csv",
+      "description": "Training CSV produced by src/build_hf_dataset.py",
+      "format": "CSV",
+      "columns": ["text", "DV_C", "DV_n", "cid", "name"]
+    },
+    {
+      "path_pattern": "data/hf_dataset_small_val.csv",
+      "description": "Validation CSV",
+      "format": "CSV"
+    },
+    {
+      "path_pattern": "data/hf_dataset_small_test.csv",
+      "description": "Test CSV",
+      "format": "CSV"
+    }
+  ],
+  "outputs": [
+    {
+      "path_pattern": "models/poc_selfies/poc_selfies.pth",
+      "description": "PyTorch checkpoint dictionary containing model state and tokenizer vocab",
+      "format": "PyTorch .pth (torch.save of a dict)",
+      "contents": ["model_state_dict", "stoi", "itos", "args"]
+    },
+    {
+      "path_pattern": "models/poc_selfies/*",
+      "description": "Optional files saved by the PoC; e.g., full state or logs",
+      "format": "varied"
+    }
+  ],
+  "vocab": {
+    "type": "bracket-token SELFIES vocab",
+    "special_tokens": ["<PAD>", "<UNK>"],
+    "mapping": "stoi (token -> id) and itos (id -> token) saved in the checkpoint"
+  },
+  "model_format_notes": "Checkpoint is a dict saved with torch.save; reload with torch.load and reconstruct model with matching architecture and vocab.",
+  "example_run": "python src/selfies_tokenizer_poc.py --train data/hf_dataset_small_train.csv --val data/hf_dataset_small_val.csv --test data/hf_dataset_small_test.csv --target DV_C --out models/poc_selfies/poc_selfies.pth --epochs 5 --batch_size 2",
+  "requirements": ["python >=3.8", "pandas", "numpy", "torch", "scikit-learn", "selfies (optional, script falls back to regex)"]
+}

@@ -1,0 +1,22 @@
+name: selfies-chem-ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - rdkit
+  - pip
+  - pandas
+  - numpy
+  - scikit-learn
+  - pip:
+    - transformers
+    - datasets
+    - selfies
+    - pubchempy
+    - accelerate
+    - requests
+    - tokenizers
+    - sentencepiece
+    - torch
+    - pytest

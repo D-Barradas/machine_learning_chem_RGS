@@ -1,0 +1,18 @@
+# Pip installable requirements (does NOT include RDKit - install via conda)
+transformers
+datasets
+selfies
+pubchempy
+scikit-learn
+accelerate
+pandas
+numpy
+requests
+tokenizers
+sentencepiece
+torch
+pytest
+
+# Optional (only if you need vision/graph libs)
+# dgl
+# rdkit-pypi  # RDKit via pip is not recommended; prefer conda/conda-forge

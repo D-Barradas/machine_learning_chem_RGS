@@ -1,0 +1,4 @@
+substituent,cid,canonical_smiles,selfies,DV_C,DV_n,source_file,canonical_smiles_fromdv,substituent_fromdv
+Hydroxide,961,,,0.0,0.0,data/preliminar_data_961.csv,0,Hydroxide
+,961,[OH-],[OH1-1],0.0,0.0,data/preliminar_data_0961.csv,0,Hydroxide
+OMe,7519,COC1=CC=CC=C1,[C][O][C][=C][C][=C][C][=C][Ring1][=Branch1],-0.2,-5.0,data/preliminar_data_7519.csv,COC1=CC=CC=C1,OMe

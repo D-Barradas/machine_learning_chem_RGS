@@ -21,7 +21,79 @@ This project focuses on querying the PubChem database to retrieve as many descri
 
 This comprehensive project leverages both standard and advanced machine learning techniques to analyze and predict properties from small substituents, providing a robust material for computational chemistry research.
 
+Quick Start — SELFIES transfer-learning
+--------------------------------------
+
+If you want to reproduce the SELFIES-based transfer-learning pipeline (preprocessing → HF dataset → fine-tune), follow these quick steps.
+
+1. Create the environment (recommended — includes RDKit):
+
+    ```bash
+    conda env create -f environment_selfies.yml
+    conda activate selfies-chem-ml
+    ```
+
+    Or install pip dependencies (RDKit via conda recommended):
+
+    ```bash
+    python -m pip install --upgrade pip
+    python -m pip install -r requirements.txt --user
+    ```
+
+2. Build the small HuggingFace dataset (uses propagated SELFIES):
+
+    ```bash
+    python src/build_hf_dataset.py --input data/substituent_selfies_propagated.csv \
+         --output-prefix data/hf_dataset_small --mode small
+    ```
+
+    This writes `data/hf_dataset_small.csv` and the splits
+    `data/hf_dataset_small_train.csv`, `_val.csv`, `_test.csv`.
+
+3. (Optional) Expand the dataset from the large PubChem-derived table and convert SMILES→SELFIES:
+
+    ```bash
+    # make sure `selfies` is installed in the environment
+    python src/build_hf_dataset.py --input data/dv_values_by_cid.csv \
+         --output-prefix data/hf_dataset_large --mode large
+    ```
+
+4. Prepare training environment and run fine-tuning (example placeholder):
+
+    - Install `transformers`, `datasets`, `accelerate` (see `requirements.txt`).
+    - Use a SELFormer / SELFIES model checkpoint (or a compatible tokeniser) and fine-tune with a regression head.
+
+5. Helpful utilities in `src/`:
+
+    - `src/prepare_dataset_selfies.py` — convert SMILES → SELFIES and collect DV labels.
+    - `src/map_names_to_smiles.py` — map substituent names to SMILES using PubChem.
+    - `src/build_hf_dataset.py` — build HF-style CSVs and train/val/test splits.
+
+If you want, I can add a ready-to-run `train.py` (HuggingFace training loop) and a short notebook showing a complete PoC fine-tune on the small dataset.
+
 --------
+
+
+**PoC Outputs**
+
+- **Script**: `src/selfies_tokenizer_poc.py` — builds a bracket-token SELFIES vocab, trains a tiny PyTorch regressor, and saves a checkpoint.
+- **Primary model checkpoint**: `models/poc_selfies/poc_selfies.pth` — a PyTorch checkpoint dict containing `model_state_dict`, `stoi`, `itos`, and `args`.
+- **Input files expected**: `data/hf_dataset_small_train.csv`, `data/hf_dataset_small_val.csv`, `data/hf_dataset_small_test.csv` (CSV with at least `text` and the target column such as `DV_C`).
+- **Vocab format**: `stoi` (token -> id) and `itos` (id -> token) are stored inside the checkpoint; tokens are SELFIES bracket tokens (e.g., `[C]`, `[=O]`) plus special tokens `<PAD>` and `<UNK>`.
+- **How to run (example)**:
+
+```bash
+python src/selfies_tokenizer_poc.py \
+    --train data/hf_dataset_small_train.csv \
+    --val data/hf_dataset_small_val.csv \
+    --test data/hf_dataset_small_test.csv \
+    --target DV_C \
+    --out models/poc_selfies/poc_selfies.pth \
+    --epochs 5 \
+    --batch_size 2
+```
+
+- **Notes**: The PoC is intentionally small — use the larger HF dataset (build from `data/dv_values_by_cid.csv`) for meaningful training. The script falls back to a regex-based tokenizer if the `selfies` package is not installed.
 
 
 ## Project Organization
