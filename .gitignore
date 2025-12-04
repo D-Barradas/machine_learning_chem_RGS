@@ -130,3 +130,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+models/poc_distilbert_regressor/model.safetensors
