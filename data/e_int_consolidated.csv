@@ -1,0 +1,94 @@
+Source,Type,System,DV_N (kcal/mol),DV_C (kcal/mol),E_int_calc (kcal/mol),E_int_pred_eq5 (kcal/mol),E_int_pred_eq7 (kcal/mol),E_int_eq8_mono (kcal/mol),E_int_eq8_di (kcal/mol),E_int_eq8_tetra (kcal/mol)
+Table1,Ligand (complexed to Mo(CO)4),"3,8-Br2-phen",,,55.0,,,,,
+Table1,Ligand (complexed to Mo(CO)4),"4,7-Cl2-phen",,,56.9,,,,,
+Table1,Ligand (complexed to Mo(CO)4),"4,7-Me2-phen",,,60.2,,,,,
+Table1,Ligand (complexed to Mo(CO)4),"5,6-Me2-phen",,,59.9,,,,,
+Table1,Ligand (complexed to Mo(CO)4),5-Br-phen,,,57.7,,,,,
+Table1,Ligand (complexed to Mo(CO)4),5-Cl-phen,,,57.7,,,,,
+Table1,Ligand (complexed to Mo(CO)4),5-Me-phen,,,59.3,,,,,
+Table1,Ligand (complexed to Mo(CO)4),5-NH2-phen,,,59.7,,,,,
+Table1,Ligand (complexed to Mo(CO)4),5-NO2-phen,,,56.2,,,,,
+Table1,Ligand (complexed to Mo(CO)4),Bathophen,,,60.2,,,,,
+Table1,Ligand (complexed to Mo(CO)4),Br4-phen,,,52.6,,,,,
+Table1,Ligand (complexed to Mo(CO)4),phen,,,58.9,,,,,
+Table1,Ligand (complexed to Mo(CO)4),tmphen,,,61.0,,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"2,9-(CHQCH2)2",1.6,,,59.5,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"2,9-(CN)2",24.8,,,50.9,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"2,9-(OCF3)2",16.1,,,53.7,,,,
+Table2_eq5,Ligand (DV_N-based prediction),2-CHO,6.7,,,56.7,,,,
+Table2_eq5,Ligand (DV_N-based prediction),2-CHQCH2,0.7,,,59.1,,,,
+Table2_eq5,Ligand (DV_N-based prediction),2-CN,12.7,,,54.8,,,,
+Table2_eq5,Ligand (DV_N-based prediction),2-NO2,15.7,,,53.8,,,,
+Table2_eq5,Ligand (DV_N-based prediction),2-OCF3,8.4,,,56.2,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-(CHO)2",12.4,,,54.9,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-(NO2)2",21.5,,,51.9,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-(OH)2",1.6,,,59.4,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-(OMe)2",3.4,,,60.0,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-(SiH3)2",2.4,,,58.1,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-7,8-(CHO)4",25.1,,,50.8,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-7,8-(NO2)4",41.0,,,45.6,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,4-7,8-(SiH3)4",4.5,,,57.5,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,8-(CHO)2",15.1,,,54.0,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,8-(NO2)2",26.5,,,50.3,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,8-(SiH3)2",2.9,,,58.0,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,8-CN,CHQCH2",10.2,,,55.6,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,8-NO2,CHO",19.7,,,52.5,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"3,8-OCF3,SiH3",6.1,,,56.9,,,,
+Table2_eq5,Ligand (DV_N-based prediction),3-CHO,7.6,,,56.5,,,,
+Table2_eq5,Ligand (DV_N-based prediction),3-CHQCH2,0.6,,,58.7,,,,
+Table2_eq5,Ligand (DV_N-based prediction),3-CN,11.9,,,55.0,,,,
+Table2_eq5,Ligand (DV_N-based prediction),3-NO2,13.7,,,54.5,,,,
+Table2_eq5,Ligand (DV_N-based prediction),3-OCF3,7.8,,,56.4,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"4,7-CN,CHQCH2",11.9,,,55.0,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"4,7-NO2,CHO",21.0,,,52.1,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"4,7-OCF3,SiH3",9.7,,,55.8,,,,
+Table2_eq5,Ligand (DV_N-based prediction),4-CHO,7.4,,,56.5,,,,
+Table2_eq5,Ligand (DV_N-based prediction),4-CHQCH2,1.1,,,59.3,,,,
+Table2_eq5,Ligand (DV_N-based prediction),4-CN,11.0,,,55.3,,,,
+Table2_eq5,Ligand (DV_N-based prediction),4-NO2,12.5,,,54.9,,,,
+Table2_eq5,Ligand (DV_N-based prediction),4-OCF3,4.8,,,57.3,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"5,6-(CHQCH2)2",0.6,,,59.1,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"5,6-(CN)2",17.8,,,53.1,,,,
+Table2_eq5,Ligand (DV_N-based prediction),"5,6-(OCF3)2",10.3,,,55.6,,,,
+Table2_eq5,Ligand (DV_N-based prediction),5-CHO,6.8,,,56.7,,,,
+Table2_eq5,Ligand (DV_N-based prediction),5-CHQCH2,0.5,,,58.8,,,,
+Table2_eq5,Ligand (DV_N-based prediction),5-CN,9.8,,,55.7,,,,
+Table2_eq5,Ligand (DV_N-based prediction),5-NO2,10.6,,,55.5,,,,
+Table2_eq5,Ligand (DV_N-based prediction),5-OCF3,5.6,,,57.1,,,,
+Table3_eq8,Substituent (DV_C-based prediction),C(Et)(NO2)2,,15.4,,,,56.2,53.4,47.9
+Table3_eq8,Substituent (DV_C-based prediction),C6H4–3Cl,,3.6,,,,58.3,57.6,56.3
+Table3_eq8,Substituent (DV_C-based prediction),CF2CF3,,14.7,,,,56.3,53.6,48.4
+Table3_eq8,Substituent (DV_C-based prediction),CHO,,13.8,,,,56.4,54.0,49.0
+Table3_eq8,Substituent (DV_C-based prediction),CN,,18.0,,,,55.7,52.5,46.0
+Table3_eq8,Substituent (DV_C-based prediction),COCl,,19.1,,,,55.5,52.1,45.2
+Table3_eq8,Substituent (DV_C-based prediction),CONHMe,,6.4,,,,57.8,56.6,54.3
+Table3_eq8,Substituent (DV_C-based prediction),CRCH,,5.7,,,,57.9,56.9,54.8
+Table3_eq8,Substituent (DV_C-based prediction),Cyclo-C4F7,,16.1,,,,56.0,53.1,47.4
+Table3_eq8,Substituent (DV_C-based prediction),Cyclohexyl,,3.8,,,,59.6,60.3,61.6
+Table3_eq8,Substituent (DV_C-based prediction),Et,,4.0,,,,59.6,60.4,61.8
+Table3_eq8,Substituent (DV_C-based prediction),NH2,,9.0,,,,60.5,62.1,65.4
+Table3_eq8,Substituent (DV_C-based prediction),NHC6H5,,4.8,,,,59.8,60.6,62.4
+Table3_eq8,Substituent (DV_C-based prediction),NHCONH2,,3.7,,,,59.6,60.2,61.6
+Table3_eq8,Substituent (DV_C-based prediction),NHNH2,,11.2,,,,60.9,62.9,67.0
+Table3_eq8,Substituent (DV_C-based prediction),NMe2,,12.3,,,,61.1,63.3,67.7
+Table3_eq8,Substituent (DV_C-based prediction),O(CH2)3CH3,,5.9,,,,60.0,61.0,63.2
+Table3_eq8,Substituent (DV_C-based prediction),OCHMe2,,6.5,,,,60.1,61.3,63.6
+Table3_eq8,Substituent (DV_C-based prediction),OCN,,14.2,,,,56.4,53.8,48.7
+Table3_eq8,Substituent (DV_C-based prediction),OCOCF3,,12.2,,,,56.7,54.5,50.2
+Table3_eq8,Substituent (DV_C-based prediction),OMe,,5.0,,,,59.8,60.7,62.5
+Table3_eq8,Substituent (DV_C-based prediction),ONO2,,13.4,,,,56.5,54.1,49.3
+Table3_eq8,Substituent (DV_C-based prediction),SCHQCH2,,4.1,,,,58.2,57.4,56.0
+Table3_eq8,Substituent (DV_C-based prediction),SO2Me,,16.8,,,,55.9,52.9,46.9
+Table3_eq8,Substituent (DV_C-based prediction),SiClMe2,,4.8,,,,58.1,57.2,55.5
+Table4_calc_pred,Complex (calc & predicted),"[Mo(CO)4(2,9-(NH2)2-phen)]",,,58.0,62.2,62.3,,,
+Table4_calc_pred,Complex (calc & predicted),[Mo(CO)4(2-NH2-phen)],,,59.1,60.5,60.7,,,
+Table4_calc_pred,Complex (calc & predicted),"[Mo(CO)4(3,4-(OMe)2-phen)]",,,54.1,60.7,60.0,,,
+Table4_calc_pred,Complex (calc & predicted),"[Mo(CO)4(3,4-7,8-(OMe)4-phen)]",,,55.1,62.5,60.7,,,
+Table4_calc_pred,Complex (calc & predicted),"[Mo(CO)4(3,8-(NH2)2-phen)]",,,60.5,62.1,60.5,,,
+Table4_calc_pred,Complex (calc & predicted),"[Mo(CO)4(3,8-CN,OMe-phen)]",,,54.4,56.6,56.9,,,
+Table4_calc_pred,Complex (calc & predicted),[Mo(CO)4(3-CHO-phen)],,,56.4,56.4,56.5,,,
+Table4_calc_pred,Complex (calc & predicted),"[Mo(CO)4(4,7-NO2,NH2-phen)]",,,55.3,56.7,55.5,,,
+Table4_calc_pred,Complex (calc & predicted),[Mo(CO)4(4-CN-phen)],,,57.3,55.7,55.3,,,
+Table4_calc_pred,Complex (calc & predicted),[Mo(CO)4(4-OH-phen)],,,59.2,59.3,59.8,,,
+Table4_calc_pred,Complex (calc & predicted),"[Mo(CO)4(5,6-(CN)2-phen)]",,,54.5,52.5,53.1,,,
+Table4_calc_pred,Complex (calc & predicted),[Mo(CO)4(5-CHQCH2-phen)],,,61.0,58.7,58.8,,,
