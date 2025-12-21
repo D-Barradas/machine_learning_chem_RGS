@@ -1,0 +1,9 @@
+Category,DV_C Range (kcal·mol⁻¹),Example Substituents
+Very Strong Electron-Withdrawing (S⟦),> 18,"NO₂, CN, COCl, SO₂Me"
+Strong Electron-Withdrawing (S\),12 – 18,"CHO, OCF₃, ONO₂, CF₂CF₃"
+Medium Electron-Withdrawing (S{),6 – 12,"OCOCF₃, CONHMe"
+Weak Electron-Withdrawing (So),< 6,"Halogens (Cl, Br), SiClMe₂"
+Weak Electron-Donating (S₄),< 6,"Alkyl groups (Me, Et), Cyclohexyl"
+Medium Electron-Donating (Sc),6 – 12,"OMe, O(CH₂)₃CH₃, OCHMe₂"
+Strong Electron-Donating (Sd),12 – 18,"NH₂, NHNH₂, NMe₂"
+Very Strong Electron-Donating (Scc),> 18,"SiH₃, NHC₆H₅"
