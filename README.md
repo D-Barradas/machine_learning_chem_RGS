@@ -69,6 +69,97 @@ If you want to reproduce the SELFIES-based transfer-learning pipeline (preproces
     - `src/map_names_to_smiles.py` — map substituent names to SMILES using PubChem.
     - `src/build_hf_dataset.py` — build HF-style CSVs and train/val/test splits.
 
+Phenanthroline Derivative Generator
+----------------------------------
+
+Generate orthophenanthroline derivatives (positions 2–9) and score interaction energies using DV descriptors.
+
+- Script: `src/generate_phen_derivatives.py`
+- Scorer: `src/score_derivatives_eq8_like.py`
+- DV mapping: `data/substituent_dv_mappings.csv` (aggregated from workspace data)
+
+Usage examples
+
+```bash
+# Build DV mapping (once)
+python src/build_substituent_library.py
+
+# Generate mono/di derivatives (default substituents)
+python src/generate_phen_derivatives.py \
+    --out data/phen_derivatives_generated_fix.csv \
+    --modes mono di
+
+# Generate mono/di/tri/tetra using identical-only combos to avoid explosion
+python src/generate_phen_derivatives.py \
+    --out data/phen_derivatives_generated_fix.csv \
+    --subs NO2 CN CHO OCF3 Cl Br NH2 OMe Me Et SiH3 \
+    --modes mono di tri tetra \
+    --identical-only
+
+# Score derivatives using Eq.8-like linear fits (Table 3) and tri interpolation
+python src/score_derivatives_eq8_like.py
+```
+
+Flags
+
+- `--modes`: one or more of `mono`, `di`, `tri`, `tetra`.
+- `--subs`: substituent names to attach; defaults to a core set.
+- `--identical-only`: generate only identical-substituent combinations for given multiplicity.
+- `--eint`: optional path to `data/e_int_consolidated.csv` to enrich DV_C mapping.
+
+Scoring assumptions
+
+- Per multiplicity (1, 2, 4), fit `E_int ≈ a + b · DV_C` using Table 3 (`Table3_eq8`).
+- `DV_C` per derivative is the sum of substituent DV_C values (`dv_c_sum`).
+- DV_C priority: `data/substituent_dv_mappings.csv` → Table 3 values → small defaults.
+- Tri (3) predictions are interpolated between the fitted di (2) and tetra (4) models.
+
+Outputs
+
+- Generated: `data/phen_derivatives_generated_fix.csv` with `system`, `smiles`, `sites`, `substituents`, `n_subs`, `dv_c_sum`.
+- Scored: `data/phen_derivatives_scored.csv` with `e_int_pred_eq8_fit` added.
+
+Caveats
+
+- Position labels (2–9) reflect RDKit aromatic C–H detection order (stable but approximate).
+- Mixed tri/tetra combos can be enabled (remove `--identical-only`), but row counts grow combinatorially.
+
+Phase 4: Reinforcement Learning for Ligand Optimization
+------------------------------------------------------
+
+Generate optimized phenanthroline derivatives using PPO over SELFIES tokens.
+
+Components
+- Reward service: `src/reward_service.py` wraps trained ExtraTrees predictor; reward = −E_int_pred + penalties.
+- Tokenizer: `src/selfies_tokenizer.py` builds SELFIES vocab from SMILES data.
+- RL trainer: `src/rl_optimize_phen_ppo.py` implements PPO with LSTM policy over SELFIES tokens.
+
+Usage
+
+```bash
+# Train PPO policy to optimize predicted E_int
+python src/rl_optimize_phen_ppo.py \
+  --model models/eint_hpo_rf.pkl \
+  --dv-mapping data/substituent_dv_mappings.csv \
+  --smiles-data data/phen_derivatives_scored.csv \
+  --out-dir results/rl_ppo \
+  --episodes 200 \
+  --batch-size 32 \
+  --max-len 50 \
+  --lr 1e-4
+```
+
+Outputs
+- Trained policy: `results/rl_ppo/best_policy.pt`
+- Top molecules: `results/rl_ppo/top_molecules.csv` with SMILES/SELFIES/reward/eint_pred
+- Training logs: `results/rl_ppo/training_log.json` (mean/max reward per episode)
+
+Notes
+- Uses CPU by default (cuDNN compatibility issues on some systems).
+- Reward combines predicted E_int (lower is better) with complexity penalties.
+- Policy is LSTM over SELFIES tokens with KL regularization to base policy.
+- Current surrogate uses Eq8 pseudo-labels; retrain on experimental E_int when available.
+
 If you want, I can add a ready-to-run `train.py` (HuggingFace training loop) and a short notebook showing a complete PoC fine-tune on the small dataset.
 
 --------
