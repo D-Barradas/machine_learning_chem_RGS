@@ -1,0 +1,212 @@
+[
+  {
+    "episode": 0,
+    "mean_reward": -327.91554947686905,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.1559944454863276
+  },
+  {
+    "episode": 1,
+    "mean_reward": -270.2969343435085,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.16429498270343887
+  },
+  {
+    "episode": 2,
+    "mean_reward": -359.1491254519457,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.12873119000420313
+  },
+  {
+    "episode": 3,
+    "mean_reward": -312.49491224405745,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.1590590269333091
+  },
+  {
+    "episode": 4,
+    "mean_reward": -390.0363493713971,
+    "max_reward": -313.0502109006119,
+    "valid_ratio": 1.0,
+    "loss": -0.11568779196840526
+  },
+  {
+    "episode": 5,
+    "mean_reward": -280.9225630100722,
+    "max_reward": -100.0,
+    "valid_ratio": 0.625,
+    "loss": -0.1692207080392668
+  },
+  {
+    "episode": 6,
+    "mean_reward": -352.92480388608556,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.1343662321390254
+  },
+  {
+    "episode": 7,
+    "mean_reward": -307.3230759210127,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.16767272731961796
+  },
+  {
+    "episode": 8,
+    "mean_reward": -381.36022080967945,
+    "max_reward": -223.66997135999077,
+    "valid_ratio": 1.0,
+    "loss": -0.12826139594162414
+  },
+  {
+    "episode": 9,
+    "mean_reward": -306.48291750983765,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.16064532776469592
+  },
+  {
+    "episode": 10,
+    "mean_reward": -129.12372026062403,
+    "max_reward": -29.275178062499908,
+    "valid_ratio": 0.25,
+    "loss": -0.11655373522785525
+  },
+  {
+    "episode": 11,
+    "mean_reward": -310.30522120249265,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.16722606133724643
+  },
+  {
+    "episode": 12,
+    "mean_reward": -343.34141137163573,
+    "max_reward": -153.45882762250653,
+    "valid_ratio": 1.0,
+    "loss": -0.15100632954632126
+  },
+  {
+    "episode": 13,
+    "mean_reward": -297.57227050210406,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.1682782299858288
+  },
+  {
+    "episode": 14,
+    "mean_reward": -343.6088856497598,
+    "max_reward": -132.9316761600071,
+    "valid_ratio": 1.0,
+    "loss": -0.15274548791788517
+  },
+  {
+    "episode": 15,
+    "mean_reward": -251.39254602624607,
+    "max_reward": -100.0,
+    "valid_ratio": 0.5,
+    "loss": -0.17673593069204163
+  },
+  {
+    "episode": 16,
+    "mean_reward": -292.7367140560085,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.16951592623960227
+  },
+  {
+    "episode": 17,
+    "mean_reward": -173.81774620265577,
+    "max_reward": -64.21123080249592,
+    "valid_ratio": 0.625,
+    "loss": -0.15653228626794663
+  },
+  {
+    "episode": 18,
+    "mean_reward": -230.9376972374189,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.16863710116677005
+  },
+  {
+    "episode": 19,
+    "mean_reward": -287.44215654976176,
+    "max_reward": -132.88486170250752,
+    "valid_ratio": 1.0,
+    "loss": -0.16874776443893935
+  },
+  {
+    "episode": 20,
+    "mean_reward": -309.7731415543693,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.1652326153889021
+  },
+  {
+    "episode": 21,
+    "mean_reward": -326.13654913140044,
+    "max_reward": -130.25143320063188,
+    "valid_ratio": 1.0,
+    "loss": -0.15007219416279233
+  },
+  {
+    "episode": 22,
+    "mean_reward": -283.10565368077573,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.15840706992267933
+  },
+  {
+    "episode": 23,
+    "mean_reward": -212.06092948491727,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.1674075660438089
+  },
+  {
+    "episode": 24,
+    "mean_reward": -292.18586104827386,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.1587175500941197
+  },
+  {
+    "episode": 25,
+    "mean_reward": -267.6021320163251,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.17595186243424593
+  },
+  {
+    "episode": 26,
+    "mean_reward": -293.9149065640586,
+    "max_reward": -100.0,
+    "valid_ratio": 0.75,
+    "loss": -0.16193851736940962
+  },
+  {
+    "episode": 27,
+    "mean_reward": -251.09475118483903,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.17393909607087893
+  },
+  {
+    "episode": 28,
+    "mean_reward": -274.4366668200737,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.1722945690202921
+  },
+  {
+    "episode": 29,
+    "mean_reward": -279.9546685620271,
+    "max_reward": -100.0,
+    "valid_ratio": 0.875,
+    "loss": -0.1572888149124038
+  }
+]
